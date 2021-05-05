@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 40237700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "geracao de uuid \"40e6215d-b5c6-4896-987c-f30f3678f608\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"40e6215d-b5c6-4896-987c-f30f3678f608\"",
+                  "offset": 16
+                }
+              ],
+              "location": "br.com.rezende.ecommerce.checkout.steps.StepDefinition.geracaoDeUuid(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-05T16:59:00.263Z",
+        "line": 6,
+        "name": "criar checkout",
+        "description": "",
+        "id": "checkout-resource;criar-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 797359400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "uma request no endpoint \"/v1/checkout/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/v1/checkout/\"",
+                  "offset": 24
+                }
+              ],
+              "location": "br.com.rezende.ecommerce.checkout.steps.StepDefinition.umaRequestNoEndpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2005400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "deve criar o checkout e retornar status code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 48
+                }
+              ],
+              "location": "br.com.rezende.ecommerce.checkout.steps.StepDefinition.deveCriarOCheckoutERetornarStatusCodeOf(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a resposta deve ser \"{\\\"code\\\":\\\"c3ec1793-67b5-4291-e54svc1243\\\"}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"{\\\"code\\\":\\\"c3ec1793-67b5-4291-e54svc1243\\\"}\"",
+                  "offset": 20
+                }
+              ],
+              "location": "br.com.rezende.ecommerce.checkout.steps.StepDefinition.aRespostaDeveSer(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Checkout Resource",
+    "description": "",
+    "id": "checkout-resource",
+    "keyword": "Feature",
+    "uri": "classpath:feature/checkout.feature",
+    "tags": []
+  }
+]

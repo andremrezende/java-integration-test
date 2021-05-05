@@ -1,0 +1,564 @@
+›13:58:40.698 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+°13:58:40.716 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+ò13:58:40.752 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+ç13:58:40.774 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest], using SpringBootContextLoader
+ø13:58:40.778 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest]: class path resource [br/com/rezende/ecommerce/checkout/SpringIntegrationTest-context.xml] does not exist
+¡13:58:40.778 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest]: class path resource [br/com/rezende/ecommerce/checkout/SpringIntegrationTestContext.groovy] does not exist
+ó13:58:40.779 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+Ë13:58:40.961 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [br.com.rezende.ecommerce.checkout.SpringIntegrationTest]: using defaults.
+∞13:58:40.962 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+É13:58:40.981 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@598cba45, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6a73ccbb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2b19617b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@46506cd4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7a32b8c9, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e50a520, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6ea21f28, org.springframework.test.context.event.EventPublishingTestExecutionListener@2bd1e8e4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@444ae9a7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4f383dab, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@311d303b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@152f6834, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@63bace7, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@8600cee, org.springframework.cloud.contract.wiremock.WireMockTestExecutionListener@50247931]
+p13:58:41.014 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test]
+á13:58:41.017 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+
+)  .   ____          _            __ _ _
+* /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
++( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+, \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
++  '  |____| .__|_| |_|_| |_\__, | / / / /
+* =========|_|==============|___/=/_/_/_/
+, :: Spring Boot ::        (v2.3.1.RELEASE)
+
+†2021-05-05 13:58:42.318  INFO [checkout-api,,,] 14672 --- [    Test worker] b.c.r.e.checkout.SpringIntegrationTest   : The following profiles are active: test
+µ2021-05-05 13:58:43.260  INFO [checkout-api,,,] 14672 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+Œ2021-05-05 13:58:43.548  INFO [checkout-api,,,] 14672 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 277ms. Found 1 JPA repository interfaces.
+ˆ2021-05-05 13:58:44.048  INFO [checkout-api,,,] 14672 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Loaded org.testcontainers.dockerclient.NpipeSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+¬2021-05-05 13:58:44.435  INFO [checkout-api,,,] 14672 --- [    Test worker] o.t.d.NpipeSocketClientProviderStrategy  : Accessing docker with local Npipe socket (npipe:////./pipe/docker_engine)
+ 2021-05-05 13:58:44.435  INFO [checkout-api,,,] 14672 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with local Npipe socket (npipe:////./pipe/docker_engine)
+ú2021-05-05 13:58:44.546  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+ç2021-05-05 13:58:44.579  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 20.10.5
+  API Version: 1.41
+#  Operating System: Docker Desktop
+  Total Memory: 12488 MB
+⁄2021-05-05 13:58:45.328  INFO [checkout-api,,,] 14672 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Credential helper/store (docker-credential-desktop) does not have credentials for index.docker.io
+»2021-05-05 13:58:45.804  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+è2021-05-05 13:58:45.804  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+™2021-05-05 13:58:45.805  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker server version should be at least 1.6.0
+∏2021-05-05 13:58:45.873  INFO [checkout-api,,,] 14672 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker environment should have more than 2GB free disk space
+¶2021-05-05 13:58:45.902  INFO [checkout-api,,,] 14672 --- [    Test worker] docker[postgres:9.6.12]                  : Creating container for image: postgres:9.6.12
+’2021-05-05 13:58:45.946  INFO [checkout-api,,,] 14672 --- [    Test worker] docker[postgres:9.6.12]                  : Starting container with ID: 991391ba3f1a45f059a16e40b3c3d8e16635218d78e8093b3d4e400fd844b1ca
+‡2021-05-05 13:58:46.268  INFO [checkout-api,,,] 14672 --- [    Test worker] docker[postgres:9.6.12]                  : Container postgres:9.6.12 is starting: 991391ba3f1a45f059a16e40b3c3d8e16635218d78e8093b3d4e400fd844b1ca
+™2021-05-05 13:58:49.811  INFO [checkout-api,,,] 14672 --- [    Test worker] docker[postgres:9.6.12]                  : Container postgres:9.6.12 started in PT5.7717049S
+¨2021-05-05 13:58:49.827  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=291049e7-d3bf-340f-b826-55abedd47916
+2021-05-05 13:58:49.947  INFO [checkout-api,,,] 14672 --- [    Test worker] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+Ò2021-05-05 13:58:49.966  INFO [checkout-api,,,] 14672 --- [    Test worker] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+â2021-05-05 13:58:49.973  INFO [checkout-api,,,] 14672 --- [    Test worker] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+›2021-05-05 13:58:50.336  INFO [checkout-api,,,] 14672 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+€2021-05-05 13:58:50.351  INFO [checkout-api,,,] 14672 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+ã2021-05-05 13:58:50.418  INFO [checkout-api,,,] 14672 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+¢2021-05-05 13:58:51.285  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+í2021-05-05 13:58:51.305  INFO [checkout-api,,,] 14672 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+®2021-05-05 13:58:51.305  INFO [checkout-api,,,] 14672 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+´2021-05-05 13:58:51.619  INFO [checkout-api,,,] 14672 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+∏2021-05-05 13:58:51.619  INFO [checkout-api,,,] 14672 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9290 ms
+Ø2021-05-05 13:58:52.553  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+•2021-05-05 13:58:52.709  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+≤2021-05-05 13:58:52.842  INFO [checkout-api,,,] 14672 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+´2021-05-05 13:58:52.952  INFO [checkout-api,,,] 14672 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.17.Final
+±2021-05-05 13:58:53.285  INFO [checkout-api,,,] 14672 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+ì2021-05-05 13:58:53.475  INFO [checkout-api,,,] 14672 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+ò2021-05-05 13:58:53.577  INFO [checkout-api,,,] 14672 --- [         task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+∫2021-05-05 13:58:53.600  INFO [checkout-api,,,] 14672 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+õ2021-05-05 13:58:53.707  INFO [checkout-api,,,] 14672 --- [         task-1] o.h.e.boot.internal.EnversServiceImpl    : Envers integration enabled? : true
+Hibernate: 
+    
+    alter table checkout 
+4       drop constraint FK1iknvk7bdqfri4egaguwn7wx7
+…2021-05-05 13:58:55.557  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table checkout 
+H       drop constraint FK1iknvk7bdqfri4egaguwn7wx7" via JDBC Statement
+
+Qorg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table checkout 
+H       drop constraint FK1iknvk7bdqfri4egaguwn7wx7" via JDBC Statement
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ñ	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+û	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ó	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+í	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+≥	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+§	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+É	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+¶	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+œ	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+»	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+ª	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+Q	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+>	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+YCaused by: org.postgresql.util.PSQLException: ERROR: relation "checkout" does not exist
+Ç	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532) ~[postgresql-42.2.14.jar:42.2.14]
+|	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267) ~[postgresql-42.2.14.jar:42.2.14]
+t	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312) ~[postgresql-42.2.14.jar:42.2.14]
+m	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268) ~[postgresql-42.2.14.jar:42.2.14]
+d	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+m	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+	... 19 common frames omitted
+
+Hibernate: 
+    
+    alter table checkout_aud 
+4       drop constraint FK8uwqeoryqlmcfl5p50kdyijth
+…2021-05-05 13:58:55.561  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table checkout_aud 
+H       drop constraint FK8uwqeoryqlmcfl5p50kdyijth" via JDBC Statement
+
+Qorg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table checkout_aud 
+H       drop constraint FK8uwqeoryqlmcfl5p50kdyijth" via JDBC Statement
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ñ	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+û	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ó	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+í	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+≥	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+§	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+É	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+¶	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+œ	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+»	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+ª	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+Q	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+>	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+]Caused by: org.postgresql.util.PSQLException: ERROR: relation "checkout_aud" does not exist
+Ç	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532) ~[postgresql-42.2.14.jar:42.2.14]
+|	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267) ~[postgresql-42.2.14.jar:42.2.14]
+t	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312) ~[postgresql-42.2.14.jar:42.2.14]
+m	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268) ~[postgresql-42.2.14.jar:42.2.14]
+d	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+m	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+	... 19 common frames omitted
+
+Hibernate: 
+    
+     alter table checkout_item 
+4       drop constraint FK3s3vgaf23cmakh2w8bn7y6st3
+…2021-05-05 13:58:55.565  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+     alter table checkout_item 
+H       drop constraint FK3s3vgaf23cmakh2w8bn7y6st3" via JDBC Statement
+
+Qorg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+     alter table checkout_item 
+H       drop constraint FK3s3vgaf23cmakh2w8bn7y6st3" via JDBC Statement
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ñ	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+û	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ó	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+í	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+≥	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+§	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+É	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+¶	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+œ	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+»	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+ª	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+Q	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+>	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+^Caused by: org.postgresql.util.PSQLException: ERROR: relation "checkout_item" does not exist
+Ç	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532) ~[postgresql-42.2.14.jar:42.2.14]
+|	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267) ~[postgresql-42.2.14.jar:42.2.14]
+t	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312) ~[postgresql-42.2.14.jar:42.2.14]
+m	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268) ~[postgresql-42.2.14.jar:42.2.14]
+d	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+m	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+	... 19 common frames omitted
+
+Hibernate: 
+    
+$    alter table checkout_item_aud 
+4       drop constraint FKf2qd4wddore96qhcgv0jdy18a
+…2021-05-05 13:58:55.568  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+$    alter table checkout_item_aud 
+H       drop constraint FKf2qd4wddore96qhcgv0jdy18a" via JDBC Statement
+
+Qorg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+$    alter table checkout_item_aud 
+H       drop constraint FKf2qd4wddore96qhcgv0jdy18a" via JDBC Statement
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ñ	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+û	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ó	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+í	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+≥	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+§	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+É	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+¶	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+œ	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+»	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+ª	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+Q	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+>	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+bCaused by: org.postgresql.util.PSQLException: ERROR: relation "checkout_item_aud" does not exist
+Ç	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532) ~[postgresql-42.2.14.jar:42.2.14]
+|	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267) ~[postgresql-42.2.14.jar:42.2.14]
+t	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312) ~[postgresql-42.2.14.jar:42.2.14]
+m	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268) ~[postgresql-42.2.14.jar:42.2.14]
+d	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+m	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+	... 19 common frames omitted
+
+Hibernate: 
+    
+    alter table shipping_aud 
+4       drop constraint FKrgssk0nn30mvu10e8q59g3c9r
+…2021-05-05 13:58:55.572  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table shipping_aud 
+H       drop constraint FKrgssk0nn30mvu10e8q59g3c9r" via JDBC Statement
+
+Qorg.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table shipping_aud 
+H       drop constraint FKrgssk0nn30mvu10e8q59g3c9r" via JDBC Statement
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ñ	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+û	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ó	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+í	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ç	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+≥	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:145) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+§	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+É	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:316) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+ï	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:469) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+¶	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+œ	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+»	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+ª	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+Q	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+h	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+>	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+]Caused by: org.postgresql.util.PSQLException: ERROR: relation "shipping_aud" does not exist
+Ç	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2532) ~[postgresql-42.2.14.jar:42.2.14]
+|	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2267) ~[postgresql-42.2.14.jar:42.2.14]
+t	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:312) ~[postgresql-42.2.14.jar:42.2.14]
+m	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:310) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:296) ~[postgresql-42.2.14.jar:42.2.14]
+n	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:273) ~[postgresql-42.2.14.jar:42.2.14]
+e	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:268) ~[postgresql-42.2.14.jar:42.2.14]
+d	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.4.5.jar:na]
+m	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.4.5.jar:na]
+£	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.17.Final.jar:5.4.17.Final]
+	... 19 common frames omitted
+
+Hibernate: 
+    
++    drop table if exists checkout cascade
+ù2021-05-05 13:58:55.577  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+¢2021-05-05 13:58:55.577  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "checkout" does not exist, skipping
+Hibernate: 
+    
+/    drop table if exists checkout_aud cascade
+ù2021-05-05 13:58:55.579  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+¶2021-05-05 13:58:55.579  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "checkout_aud" does not exist, skipping
+Hibernate: 
+    
+0    drop table if exists checkout_item cascade
+ù2021-05-05 13:58:55.582  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+ß2021-05-05 13:58:55.582  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "checkout_item" does not exist, skipping
+Hibernate: 
+    
+4    drop table if exists checkout_item_aud cascade
+ù2021-05-05 13:58:55.584  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+´2021-05-05 13:58:55.584  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "checkout_item_aud" does not exist, skipping
+Hibernate: 
+    
+*    drop table if exists revinfo cascade
+ù2021-05-05 13:58:55.586  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+°2021-05-05 13:58:55.587  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "revinfo" does not exist, skipping
+Hibernate: 
+    
++    drop table if exists shipping cascade
+ù2021-05-05 13:58:55.589  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+¢2021-05-05 13:58:55.590  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "shipping" does not exist, skipping
+Hibernate: 
+    
+/    drop table if exists shipping_aud cascade
+ù2021-05-05 13:58:55.592  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+¶2021-05-05 13:58:55.593  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : table "shipping_aud" does not exist, skipping
+Hibernate: 
+    
+0    drop sequence if exists hibernate_sequence
+ù2021-05-05 13:58:55.595  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+Ø2021-05-05 13:58:55.596  WARN [checkout-api,,,] 14672 --- [         task-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : sequence "hibernate_sequence" does not exist, skipping
+CHibernate: create sequence hibernate_sequence start 1 increment 1
+Hibernate: 
+    
+    create table checkout (
+       id int8 not null,
+        code varchar(255),
+        created_at timestamp,
+        save_address boolean,
+#        save_information boolean,
+        status varchar(255),
+        updated_at timestamp,
+        shipping_id int8,
+        primary key (id)
+    )
+Hibernate: 
+    
+!    create table checkout_aud (
+       id int8 not null,
+        rev int4 not null,
+        revtype int2,
+        code varchar(255),
+        created_at timestamp,
+        save_address boolean,
+#        save_information boolean,
+        status varchar(255),
+        updated_at timestamp,
+        shipping_id int8,
+        primary key (id, rev)
+    )
+Hibernate: 
+    
+"    create table checkout_item (
+       id int8 not null,
+        product varchar(255),
+$        checkout_id int8 not null,
+        primary key (id)
+    )
+Hibernate: 
+    
+&    create table checkout_item_aud (
+       id int8 not null,
+        rev int4 not null,
+        revtype int2,
+        product varchar(255),
+        checkout_id int8,
+        primary key (id, rev)
+    )
+Hibernate: 
+    
+    create table revinfo (
+       rev int4 not null,
+        revtstmp int8,
+        primary key (rev)
+    )
+Hibernate: 
+    
+    create table shipping (
+       id int8 not null,
+        address varchar(255),
+        cep varchar(255),
+"        complement varchar(255),
+        country varchar(255),
+        state varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    
+!    create table shipping_aud (
+       id int8 not null,
+        rev int4 not null,
+        revtype int2,
+        address varchar(255),
+        cep varchar(255),
+"        complement varchar(255),
+        country varchar(255),
+        state varchar(255),
+        primary key (id, rev)
+    )
+Hibernate: 
+    
+    alter table checkout 
+4       add constraint FK1iknvk7bdqfri4egaguwn7wx7 
+#       foreign key (shipping_id) 
+       references shipping
+Hibernate: 
+    
+    alter table checkout_aud 
+4       add constraint FK8uwqeoryqlmcfl5p50kdyijth 
+       foreign key (rev) 
+       references revinfo
+Hibernate: 
+    
+     alter table checkout_item 
+4       add constraint FK3s3vgaf23cmakh2w8bn7y6st3 
+#       foreign key (checkout_id) 
+       references checkout
+Hibernate: 
+    
+$    alter table checkout_item_aud 
+4       add constraint FKf2qd4wddore96qhcgv0jdy18a 
+       foreign key (rev) 
+       references revinfo
+Hibernate: 
+    
+    alter table shipping_aud 
+4       add constraint FKrgssk0nn30mvu10e8q59g3c9r 
+       foreign key (rev) 
+       references revinfo
+Ï2021-05-05 13:58:55.658  INFO [checkout-api,,,] 14672 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+º2021-05-05 13:58:55.669  INFO [checkout-api,,,] 14672 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+∞2021-05-05 13:58:56.262  WARN [checkout-api,,,] 14672 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+ﬁ2021-05-05 13:58:58.716  INFO [checkout-api,,,] 14672 --- [    Test worker] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+∏2021-05-05 13:58:59.371  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.payment-paid-input' has 1 subscriber(s).
+Ù2021-05-05 13:58:59.383  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+≤2021-05-05 13:58:59.383  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+¥2021-05-05 13:58:59.383  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+Ω2021-05-05 13:58:59.462  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.checkout-created-output' has 1 subscriber(s).
+µ2021-05-05 13:58:59.513  INFO [checkout-api,,,] 14672 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56058 (http) with context path ''
+∫2021-05-05 13:58:59.732  INFO [checkout-api,,,] 14672 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories‚Ä¶
+û2021-05-05 13:59:00.148  INFO [checkout-api,,,] 14672 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+¡2021-05-05 13:59:00.179  INFO [checkout-api,,,] 14672 --- [    Test worker] b.c.r.e.checkout.SpringIntegrationTest   : Started SpringIntegrationTest in 19.163 seconds (JVM running for 21.272)
+
+oScenario: criar checkout                                                 [90m# feature/checkout.feature:6[0m
+   [32mGiven [0m[32mgeracao de uuid [0m[32m[1m"40e6215d-b5c6-4896-987c-f30f3678f608"[0m           [90m# br.com.rezende.ecommerce.checkout.steps.StepDefinition.geracaoDeUuid(java.lang.String)[0m
+≤2021-05-05 13:59:00.742  INFO [checkout-api,,,] 14672 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+°2021-05-05 13:59:00.742  INFO [checkout-api,,,] 14672 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+ö2021-05-05 13:59:00.774  INFO [checkout-api,,,] 14672 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+î2021-05-05 13:59:00.888  INFO [checkout-api,664963039a50441a,664963039a50441a,true] 14672 --- [o-auto-1-exec-1] b.c.r.e.c.service.CheckoutServiceImpl    : M=create, checkoutRequest=CheckoutRequest(firstName=, lastName=, email=, address=, complement=, country=, state=, cep=, saveAddress=null, saveInfo=null, paymentMethod=, cardName=, cardNumber=, cardDate=, cardCvv=123, products=[produtoA, produtoB])
+Hibernate: 
+    select
+(        nextval ('hibernate_sequence')
+Hibernate: 
+    select
+(        nextval ('hibernate_sequence')
+Hibernate: 
+    select
+(        nextval ('hibernate_sequence')
+Hibernate: 
+    select
+(        nextval ('hibernate_sequence')
+Hibernate: 
+G    /* insert br.com.rezende.ecommerce.checkout.entity.ShippingEntity
+        */ insert 
+        into
+            shipping
+=            (address, cep, complement, country, state, id) 
+        values
+             (?, ?, ?, ?, ?, ?)
+Hibernate: 
+G    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutEntity
+        */ insert 
+        into
+            checkout
+f            (code, created_at, save_address, save_information, shipping_id, status, updated_at, id) 
+        values
+&            (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+K    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutItemEntity
+        */ insert 
+        into
+            checkout_item
+)            (checkout_id, product, id) 
+        values
+            (?, ?, ?)
+Hibernate: 
+K    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutItemEntity
+        */ insert 
+        into
+            checkout_item
+)            (checkout_id, product, id) 
+        values
+            (?, ?, ?)
+Hibernate: 
+    select
+(        nextval ('hibernate_sequence')
+Hibernate: 
+:    /* insert org.hibernate.envers.DefaultRevisionEntity
+        */ insert 
+        into
+            revinfo
+            (revtstmp, rev) 
+        values
+            (?, ?)
+Hibernate: 
+K    /* insert br.com.rezende.ecommerce.checkout.entity.ShippingEntity_AUD
+        */ insert 
+        into
+            shipping_aud
+K            (revtype, address, cep, complement, country, state, id, rev) 
+        values
+&            (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+K    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutEntity_AUD
+        */ insert 
+        into
+            checkout_aud
+t            (revtype, code, created_at, save_address, save_information, status, updated_at, shipping_id, id, rev) 
+        values
+,            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+O    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutItemEntity_AUD
+        */ insert 
+        into
+            checkout_item_aud
+7            (revtype, product, checkout_id, id, rev) 
+        values
+            (?, ?, ?, ?, ?)
+Hibernate: 
+O    /* insert br.com.rezende.ecommerce.checkout.entity.CheckoutItemEntity_AUD
+        */ insert 
+        into
+            checkout_item_aud
+7            (revtype, product, checkout_id, id, rev) 
+        values
+            (?, ?, ?, ?, ?)
+—  [32mWhen [0m[32muma request no endpoint [0m[32m[1m"/v1/checkout/"[0m                           [90m# br.com.rezende.ecommerce.checkout.steps.StepDefinition.umaRequestNoEndpoint(java.lang.String)[0m
+◊  [32mThen [0m[32mdeve criar o checkout e retornar status code of [0m[32m[1m201[0m               [90m# br.com.rezende.ecommerce.checkout.steps.StepDefinition.deveCriarOCheckoutERetornarStatusCodeOf(int)[0m
+Õ  [32mAnd [0m[32ma resposta deve ser [0m[32m[1m"{\"code\":\"c3ec1793-67b5-4291-e54svc1243\"}"[0m [90m# br.com.rezende.ecommerce.checkout.steps.StepDefinition.aRespostaDeveSer(java.lang.String)[0m
+  ][32m[1m???????????????????????????????????????????????????????????????????????????????[0m
+  {[32m[1m?[0m Share your Cucumber Report with your team at [36m[1m[4mhttps://reports.cucumber.io[0m    [32m[1m?[0m
+  j[32m[1m?[0m Activate publishing with one of the following:                              [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  |[32m[1m?[0m src/test/resources/cucumber.properties:    [36mcucumber.publish.enabled[0m=[36mtrue[0m    [32m[1m?[0m
+  |[32m[1m?[0m Environment variable:                      [36mCUCUMBER_PUBLISH_ENABLED[0m=[36mtrue[0m    [32m[1m?[0m
+  |[32m[1m?[0m JUnit:                                     [36m@CucumberOptions[0m(publish = [36mtrue[0m) [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  s[32m[1m?[0m More information at [36mhttps://reports.cucumber.io/docs/cucumber-jvm[0m           [32m[1m?[0m
+  j[32m[1m?[0m                                                                             [32m[1m?[0m
+  Ç[32m[1m?[0m To disable this message, add [1mcucumber.publish.quiet[0m[1m=[0m[1mtrue[0m to                 [32m[1m?[0m
+  r[32m[1m?[0m [1msrc/test/resources/cucumber.properties[0m                                      [32m[1m?[0m
+  ][32m[1m???????????????????????????????????????????????????????????????????????????????[0m
